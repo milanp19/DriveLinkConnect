@@ -17,8 +17,8 @@ const Navbar = () => {
   return (
     <div className="flex justify-around px-4 py-4">
       <div className="px-4 py-2">
-        <Link href="/" className="text-lg">
-          Logo
+        <Link href="/" className="text-2xl">
+          D<span className="text-primary">L</span>
         </Link>
       </div>
       <NavigationMenu>
