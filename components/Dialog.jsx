@@ -7,14 +7,14 @@ const Dialog = () => {
   const dialogRef = useRef(null);
   return (
     <div>
-      <dialog ref={dialogRef}>
+      <Dialog>
         <DialogTrigger className="bg-primary text-white rounded-md px-4 py-2 text-sm font-medium">
           Find Ride
         </DialogTrigger>
         <DialogContent>
           <ProfileForm />
         </DialogContent>
-      </dialog>
+      </Dialog>
     </div>
   );
 };
