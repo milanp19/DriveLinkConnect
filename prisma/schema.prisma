@@ -14,3 +14,12 @@ model User {
   name  String @unique
   password String
 }
+
+model Driver {
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  name String
+  pickupLocation String
+  dropLocation String
+  time DateTime
+  vehicleModel String
+}

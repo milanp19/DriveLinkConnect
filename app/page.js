@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { ProfileForm } from "@/components/Form.jsx";
 
 export default function Home() {
   return (
@@ -14,8 +16,16 @@ export default function Home() {
             to share rides to work, school, events, and more.
           </p>
           <div className="flex gap-4 mt-5">
-            <Button>Find Ride</Button>
-            <Button>Offer Ride</Button>
+            <Dialog>
+              <DialogTrigger className="bg-primary text-white rounded-md px-4 py-2 text-sm font-medium">
+                Find Ride
+              </DialogTrigger>
+              <DialogContent>
+                <ProfileForm />
+              </DialogContent>
+            </Dialog>
+
+            <Button formmethod="dialog">Offer Ride</Button>
           </div>
         </div>
         <>
