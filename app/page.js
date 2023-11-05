@@ -25,7 +25,7 @@ export default function Home() {
               </DialogContent>
             </Dialog>
 
-            <Button formmethod="dialog">Offer Ride</Button>
+            <Button>Offer Ride</Button>
           </div>
         </div>
         <>
